@@ -65,8 +65,17 @@ a:hover {
 }
 /*------BESKRIVNING AV HEMSIDA----*/
 
+/*Om du vill centrera innehåll så kan du alltid skapa en container klass.
+
+*/
+/* .container {
+    margin: auto;
+    padding: 1em;
+    width: 45%;
+} */
+
 .presentation p  {
-    width:45%;
+    width:45%; /*Kan ta bort ifall du använder dig av container klassen */
     padding-left: 15%;
     padding-bottom: 15%;
     margin-top:0;
@@ -76,11 +85,15 @@ a:hover {
     font-family:palatino, arial;
     font-style: normal;
     }
+
+/* h2 har padding som kommer att påverka alla h2 på sidan. Du kommer ha det svårt 
+att använda h2 ifall du bestämmer dig att ha fler h2. Undvik att lägga 
+padding eller margin på h element. Alla h element kommer redan med det. */
 section h2 {
     font-family:'BlackChancery', arial;
     font-weight: 100;
     font-size: 3em;
-    width:45%;
+    width:45%; /*Kan ta bort ifall du använder dig av container klassen */
     padding-top:12%;
     padding-left: 15%;
     padding-bottom:2%;
